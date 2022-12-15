@@ -12,5 +12,6 @@ namespace Common
         void SetSortStrategy(SortStrategy sortStrategy);
         Node GetFirst();
         void Sort();
+        void SortDesc();
     }
 }

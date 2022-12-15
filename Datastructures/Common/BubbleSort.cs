@@ -28,5 +28,26 @@ namespace Common
                 }
             }
         }
+
+        public override void SortDesc(IMyList list)
+        {
+            bool sort = true;
+            while (sort)
+            {
+                sort = false;
+                Node currentNode = list.GetFirst();
+                Node currentNodeNext = list.GetFirst().next;
+                while (currentNodeNext != null)
+                {
+                    if (currentNode.data < currentNodeNext.data)
+                    {
+                        (currentNode.data, currentNodeNext.data) = (currentNodeNext.data, currentNode.data);
+                        sort = true;
+                    }
+                    currentNode = currentNode.next;
+                    currentNodeNext = currentNodeNext.next;
+                }
+            }
+        }
     }
 }

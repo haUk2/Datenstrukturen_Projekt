@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Common;
 
-namespace Common
+namespace Sorting
 {
     public class InsertionSort : SortStrategy
     {
@@ -26,13 +27,14 @@ namespace Common
             }
             Console.WriteLine("InsertionSorted list ");
         }
+
         public override void SortDesc(IMyList list)
         {
-
+            throw new NotImplementedException();
         }
     }
 
-    public class InsertionSortInverse : SortStrategy
+    public class InsertionSortReverted : SortStrategy
     {
         public override void Sort(IMyList list)
         {
@@ -55,10 +57,7 @@ namespace Common
 
         public override void SortDesc(IMyList list)
         {
-            
+            throw new NotImplementedException();
         }
     }
-
-    
-    
 }

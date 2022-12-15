@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\SingleLinkedListTests\SingleLinkedList.csproj" />
+    <ProjectReference Include="..\Stack_exercise\MyStack.csproj" />
   </ItemGroup>
 
 </Project>
